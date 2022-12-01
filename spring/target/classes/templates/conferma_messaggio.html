@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeLeaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Messaggio inviato</title>
+</head>
+<body>
+
+                 <p class="contatti"> Nome: </p> <p th:text="${dati.nome}" class="contatti"> </p>
+                   <p class="contatti"> Email: </p> <p th:text="${dati.email}" class="contatti"> </p>
+                   <p class="contatti"> Oggetto: </p> <p th:text="${dati.oggetto}" class="contatti"> </p>
+                   <p class="contatti"> Messaggio: </p> <p th:text="${dati.messaggio}" class="contatti"> </p>
+
+</body>
+</html>

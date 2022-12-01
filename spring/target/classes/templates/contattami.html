@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://thymeLeaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Contattami</title>
@@ -25,6 +25,18 @@
 <h2>Per informazioni potete contattarmi ai seguenti recapiti: </h2>
 <h3>email: info@luigiesposito.com</h3>
 <h3>tel: 3311234567</h3>
+
+
+<form class="form" th:action="@{/send}" th:object="${dati}" method="post">
+  <h2>CONTATTAMI</h2>
+  <p type="Nome:"><input type="text" name="nome" placeholder="Scrivi il tuo nome qui..."></input></p>
+  <p type="Email:"><input type="text" name="email" placeholder="Scrivi la tua mail..."></input></p>
+  <p type="Oggetto:"><input  type="text" name="oggetto" placeholder="Oggetto del messaggio..."></input></p>
+  <p type="Messaggio:"><input  type="text" name="messaggio" placeholder="Scrivi qui il tuo messaggio..."></input></p>
+  <button>Invia Messaggio</button>
+</form>
+
+
 
 <img width="700px" src="https://www.accademiadigitaleliguria.it/wp-content/uploads/2021/04/05diventare-programmatore.jpg">
 
